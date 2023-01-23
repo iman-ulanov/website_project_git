@@ -1,9 +1,10 @@
 from rest_framework import serializers
 
-from website_project_git.app.items.models import Item
+from .models import Item
 
 
-class ItemSerializer(serializers.Serializer):
+class ItemSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Item
         fields = '__all__'
