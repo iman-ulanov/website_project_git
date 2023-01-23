@@ -1,12 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
+
 
 from accounts.views import AuthorViewSet
 from items.views import ItemViewSet
 
-# router = routers.DefaultRouter()
-# router.register('register', UserRegisterViewSet)
+
 
 
 urlpatterns = [
